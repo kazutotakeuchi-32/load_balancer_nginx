@@ -1,0 +1,40 @@
+version: "3.9"
+services:
+  app1:
+    build:
+      context: .
+      dockerfile: ./containers/nginx1/Dockerfile
+    # ports:
+    # - "3000:80"
+    volumes:
+    - ./app1:/usr/www/app
+
+  app2:
+    build:
+      context: .
+      dockerfile: ./containers/nginx1/Dockerfile
+    # ports:
+    #   - "3001:80"
+    volumes:
+    - ./app2:/usr/www/app
+
+  app3:
+    build:
+      context: .
+      dockerfile: ./containers/nginx1/Dockerfile
+    # ports:
+    #  - "3002:80"
+    volumes:
+    - ./app3:/usr/www/app
+  app4:
+    build:
+      context: .
+      dockerfile: ./containers/nginx1/Dockerfile
+    volumes:
+    - ./app4:/usr/www/app
+  web:
+    build:
+      context: .
+      dockerfile: ./containers/nginx2/Dockerfile
+    ports:
+     - "80:80" 
