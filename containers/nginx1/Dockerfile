@@ -22,4 +22,5 @@ RUN apk update \
 COPY ./containers/nginx.conf /etc/nginx/
 COPY ./containers/nginx1/default.conf /etc/nginx/conf.d/default.conf
 RUN chmod 777 /etc/nginx/conf.d/default.conf
+RUN chmod 777 -R /usr/share/nginx/html
 RUN mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
