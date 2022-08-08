@@ -6,5 +6,5 @@
 
 ## 構成図
 
-<img src= "https://i.gyazo.com/64b06c2393a8dc33206ec7241f24d64c.png"
+<img src= "https://i.gyazo.com/47eb5d002c93ac39d6f8f87490702dc8.png"
 alt="構成図">
